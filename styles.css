@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+/* APPLIES TO EVERYTHING */
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* FONTS */
+.big-font {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.small-font, p {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* GENERALIZATIONS / DEFAULTS */
+h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .5px;
+}
+
+body {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("resources/pixelated-umak.png");
+}
+
+#furret-audio {
+    position: absolute;
+    visibility: hidden;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    font-size: 30px;
+}
+
+button > img {
+    height: inherit;
+}
+
+button > p {
+    position: absolute;
+    font-size: inherit;
+}
+
+button:active {
+    margin-bottom: 1px;
+    height: 68px;
+    font-size: 29px;
+}
+
+header {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* PHASE 1 */
+div#logo > img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+div#logo img#non-circular {
+    border-radius: 0; 
+}
+
+div#character-list, div#character-msg {
+    position: absolute;
+    bottom: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+div#character-list > span, div#character-msg > span {
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div#character-list > span > img {
+    width: inherit;
+    height: auto;
+}
+
+button#short-button {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* PHASE 2 */
+img#wooden-sign {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 85vh;
+}
+
+button#long-button {
+    position: absolute;
+    bottom: 3vh;
+}
+
+/* BOARD CONTENT */
+#doland-div {
+    position: absolute;
+    top: 55%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 300px;
+    height: auto;
+}
+
+#doland-div > * > img{
+    width: 100%;
+    height: auto;
+}
+
+#doland-img:hover {
+    content: url(resources/pixelated-doland.png);
+}
+
+#doland-chat-bubble {
+    position: absolute;
+    top: -50px;
+    z-index: 3;
+}
+
+#doland-chat-msg {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 250px;
+    text-align: center;
+    font-size: 30px;
+}
+
+h6 {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+#board-footer > p {
+    position: absolute;
+    top: 76vh;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+
+div#information {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    font-size: 22px;
+}
+
+/* THIRD PHASE */
+#last-msg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    text-align: center;
+}
+
+#last-msg > h2 {
+    font-size: 150px;
+}
+
+#last-msg > h3 {
+    font-size: 35px;
+}
+
+div#character-msg > span > img {
+    width: inherit;
+    height: auto;
+}
+
+div#character-msg > span {
+    display: flex;
+    flex-direction: column;
+}
+
+div#character-msg > span > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbubble {
+    width: 200px;
+    height: auto;
+}
+
+div#character-msg > span > span > p {
+    position: absolute;
+    top: 2%;
+    width: 170px;
+    word-wrap: break-word;
+    font-size: 18px;
+}

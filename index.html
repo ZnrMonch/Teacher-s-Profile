@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CONNECT TO THE EXTERNAL CSS FILES -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Teacher's Profile</title>
+</head>
+<body>
+    <!-- BACKGROUND MUSIC -->
+    <audio controls autoplay loop id="furret-audio">
+        <source src="resources/furret.mp3">
+    </audio>
+    <script>document.getElementById('furret-audio').volume = 0.2;</script>
+
+    <!-- HEADER PART | LOGOS AND WEBSITE NAME -->
+    <header>
+        <div id="logo">
+            <img src="resources/logos/umak-logo.png" alt="umak-logo">
+            <img src="resources/logos/cite-logo.png" alt="cite-logo">
+            <img src="resources/logos/hsu-logo.png" alt="hsu-logo" id="non-circular">
+        </div>
+        <h1>Teacher's Profile</h1>
+    </header>
+
+    <!-- MAIN BODY -->
+    <div id="body">
+        <!-- FIRST PHASE OF THE MAIN BODY-->
+        <div id="first-phase">
+            <!-- BUTTON TO PROCEED TO THE NEXT PHASE -->
+            <button id="short-button">
+                <img src="resources/short-button.png" alt="short-button">
+                <p class="small-font">Start!!</p>
+            </button>
+
+            <!-- PIXELATED CHARACTER LISTS -->
+            <div id="character-list">
+                <span>
+                    <img src="resources/characters/Renz.png" alt="Renz" id="renz-img">  
+                </span>
+                <span>
+                    <img src="resources/characters/Dhanica.png" alt="Dhanica" id="dhanica-img">
+                </span>
+                <span>
+                    <img src="resources/characters/Xia.png" alt="Xia" id="xia-img">
+                </span>
+                <span>
+                    <img src="resources/characters/Andrei.png" alt="Andrei" id="andrei-img">
+                </span>
+                <span>
+                    <img src="resources/characters/Fitz.png" alt="Fitz" id="fitz-img">
+                </span>
+                <span>
+                    <img src="resources/characters/Brisias.png" alt="Brisias" id="brisias-img">
+                </span>
+                <span>
+                    <img src="resources/characters/Ashly.png" alt="Ashly" id="ashly-img">
+                </span>        
+            </div>
+        </div> 
+
+        <!-- SECOND PHASE OF THE MAIN BODY -->
+        <div id="second-phase" style="display: none">
+            <!-- BOARD -->
+            <img src="resources/wooden-sign.png" alt="wooden-sign" id="wooden-sign">
+
+            <!-- BOARD'S CONTENT -->
+            <div id="board-content" class="small-font">
+                <!-- LEFT CONTENT | TEACHER'S PICTURE -->
+                <div id="doland-div">
+                    <span id="doland-chats">
+                        <img src="resources/chatbubble.png" alt="chat-bubble" id="doland-chat-bubble">
+                        <p id="doland-chat-msg">Bossing!</p>
+                    </span>
+                    <span id="doland-picture">
+                        <img src="resources/doland.png" alt="doland" id="doland-img">
+                    </span>
+                    <h6>(hover me)</h6>
+                </div>
+
+                <!-- RIGHT CONTENT | TEACHER'S INFORMATION -->
+                <div id="information">
+                    <!-- LEFT INFORMATION -->
+                    <strong id="left-info">
+                        Name: <br>
+                        Age: <br>
+                        Birthday: <br>
+                        Hobbies: <br>
+                        School/Institution: <br>
+                        Degree: <br><br>
+                        Significant Leadership: <br><br>
+                        Teaching Experience: <br>
+                        Subjects Taught: <br><br><br><br><br>
+                    </strong>
+
+                    <!-- RIGHT INFORMATION -->
+                    <span id="right-info">
+                        Doland Angelo B. Tabbu <br>
+                        28 years old <br>
+                        September 19, 1996 <br>
+                        Sleeping and Playing <br>
+                        University of Makati <br>
+                        Bachelor of Science in Education <br>
+                        &nbsp Major in Social Studies <br>
+                        Chairman of Commission on Student Elections <br>
+                        &nbsp College of Education Representative <br>
+                        2 years <br>
+                        Contemporary Philippine Arts <br>
+                        Economics <br>
+                        Introduction to the Philosophy <br>
+                        Personal Development <br>
+                        Understanding Culture, Society and Politics <br>
+                    </span>
+                </div>
+
+                <!-- QUOTE OF THE TEACHER -->
+                <div id="board-footer">
+                    <p>"Genuine but dumb, risky, and yet so meaningful"</p>
+                </div>
+            </div>
+
+            <!-- BUTTON TO PROCEED TO THE NEXT PHASE -->
+            <button id="long-button">
+                <img src="resources/long-button.png" alt="long-button">
+                <p class="small-font">Click here for the surprise!</p>
+            </button>
+        </div>
+
+        <!-- THE THIRD AND THE LAST PHASE -->
+        <div id="third-phase" style="display: none">
+            <!-- GREETING MESSAGE WITH CREDITS -->
+            <div class="small-font" id="last-msg">
+                <h2>Happy Teacher's Month!</h2>
+                <h3 id="credits">Developed by:
+                    Group 2: Moncinilla, Ballesteros, Garcia, Valencia, Dellosa, Labuson and Tiu :)</h3>
+            </div>
+            
+            <!-- PIXELATED CHARACTERS LIST BUT WITH GREETINGS IN A CHAT BUBBLE -->
+            <div id="character-msg">
+                <span>
+                    <span>
+                        <img src="resources/chatbubble.png" alt="chat-bubble" class="chatbubble">
+                        <p>Thank you for being our guiding light.</p>
+                    </span>
+                    <img src="resources/characters/Renz.png" alt="Renz" id="renz-img">
+                </span>
+                <span>
+                    <span>
+                        <p>Your motivation drives us to succeed.</p>
+                        <img src="resources/chatbubble.png" alt="chat-bubble" class="chatbubble">
+                    </span>
+                    <img src="resources/characters/Dhanica.png" alt="Dhanica" id="dhanica-img">
+                </span>
+                <span>
+                    <span>
+                        <p>You inspire us to learn and grow every day.</p>
+                        <img src="resources/chatbubble.png" alt="chat-bubble" class="chatbubble">
+                    </span>
+                    <img src="resources/characters/Xia.png" alt="Xia" id="xia-img">
+                </span>
+                <span>
+                    <span>
+                        <p>Thank you for planting the seeds of knowledge.</p>
+                        <img src="resources/chatbubble.png" alt="chat-bubble" class="chatbubble">
+                    </span>
+                    <img src="resources/characters/Brisias.png" alt="Brisias" id="brisias-img">
+                </span>
+                <span>
+                    <span>
+                        <p>To the one who shaped my future with wisdom!</p>
+                        <img src="resources/chatbubble.png" alt="chat-bubble" class="chatbubble">
+                    </span>
+                    <img src="resources/characters/Andrei.png" alt="Andrei" id="andrei-img">
+                </span>
+                <span>
+                    <span>
+                        <p>Thank you for making learning fun!</p>
+                        <img src="resources/chatbubble.png" alt="chat-bubble" class="chatbubble">
+                    </span>
+                    <img src="resources/characters/Fitz.png" alt="Fitz" id="fitz-img">
+                </span>
+                <span>
+                    <span>
+                        <p>You've inspired me to reach for the stars.</p>
+                        <img src="resources/chatbubble.png" alt="chat-bubble" class="chatbubble">
+                    </span>
+                    <img src="resources/characters/Ashly.png" alt="Ashly" id="ashly-img">  
+                </span>        
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT PART | INTERACTIVITY
+        This is to ensure the 3 phases will consecutively. 
+        While doing so, it also helps to execute transitions. 
+        It also makes the messages change time-to-time. -->
+        
+        <script>
+            /* DECLARATIONS */
+            const shortButton = document.getElementById("short-button");
+            const longButton = document.getElementById("long-button");
+            const phaseOne = document.getElementById("first-phase");
+            const phaseTwo = document.getElementById("second-phase");
+            const phaseThree = document.getElementById("third-phase");
+        
+            /* HIDE PHASE 1 AND SHOW PHASE 2 WITH TRANSITION */
+            shortButton.addEventListener('click', function() {
+                phaseOne.classList.add('fade-out');
+                setTimeout(() => {
+                    phaseOne.style.display = "none";
+                    phaseTwo.style.display = "block";
+                    phaseTwo.classList.add('fade-in');
+                }, 500);
+            });
+            
+            /* HIDE PHASE 2 AND SHOW PHASE 3 WITH TRANSITION */
+            longButton.addEventListener('click', function() {
+                phaseTwo.classList.add('fade-out');
+                setTimeout(() => {
+                    phaseTwo.style.display = "none";
+                    phaseThree.style.display = "block";
+                    phaseThree.classList.add('fade-in');
+                }, 500);
+            });
+
+            /* CHANGES THE MESSAGE TIME-TO-TIME */
+            const dolandMsg = document.getElementById("doland-chat-msg");
+            const messages = ["Bossing!", "Aral nang Mabuti!"];
+            let currentIndex = 0;
+
+            // Start with a 2s delay.
+            setTimeout(function() {
+                // Change the message every 5 seconds
+                setInterval(function() {
+                    currentIndex = (currentIndex + 1) % messages.length;
+                    dolandMsg.textContent = messages[currentIndex];
+                }, 5000);
+            }, 2000);
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* FADE IN/OUT ANIMATIONS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.fade-out {
+    animation-delay: 1s;
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+/* SLIDE DOWN ANIMATION  */
+@keyframes slideDown {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+#wooden-sign {
+    animation: slideDown 1s ease-out forwards;
+}
